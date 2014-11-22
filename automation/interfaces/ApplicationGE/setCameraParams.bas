@@ -7,6 +7,8 @@ sub main()
   dim ge as EARTHlib.applicationGE
   
   set ge = new EARTHlib.applicationGE
+
+  while ge.isInitialized = 0: doEvents: wend
     
 ' Position Google Earth over lake Zurich, viewing in direction
 ' of the main station:
@@ -20,5 +22,7 @@ sub main()
     tilt      := 70,                                  _
     azimuth   := 360 - 15,                            _
     speed     := 5
+
+  activeWorkbook.saved = true
 
 end sub
