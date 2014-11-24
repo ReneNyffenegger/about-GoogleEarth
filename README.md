@@ -1,4 +1,1 @@
-about-GoogleEarth
-=================
-
-about Google Earth
+# about Google Earth
