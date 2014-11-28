@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>A simple Google Earth api text</title>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+  <script type="text/javascript">
+
+    var ge_instance;
+
+    function init() {
+      google.earth.createInstance(
+        'earth_div',  // div into which to place earth
+        init_success, // callback function when createInstance succeeded
+        init_failure  // callback function when createInstance failed
+      );
+    }
+
+    function init_success(instance) {
+      ge_instance = instance;
+      ge_instance.getWindow().setVisibility(true);
+    }
+
+    function init_failure(errorCode) {
+      alert('failed to init Google Earth');
+    }
+
+
+    google.load(
+      "earth",            // Module
+      "1",                // Version
+      {"other_params":
+          "sensor=false"  // Does application use a sensor such as GPS locator?
+      }
+    );
+
+
+    google.setOnLoadCallback(init);
+
+  </script>
+
+</head>
+<body>
+  <div id="earth_div" style="height: 100%; width: 100%"></div>
+</body>
+</html>
+
