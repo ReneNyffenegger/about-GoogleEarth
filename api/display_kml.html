@@ -1,0 +1,78 @@
+<html>
+<!--
+
+  A Webserver is needed that serves this html file (display_kml.html)
+  and the referenced kml file (Kloten-Airport.kml) on port 7777. For example,
+  with python, this can be achieved by
+
+      python -m SimpleHTTPServer 7777
+
+  Then point the browser to
+  
+      http://localhost:7777/display_kml.html
+
+-->
+<head>
+  <title>Fly to Zurich Airport</title>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
+  <script type="text/javascript">
+
+    var ge_instance;
+
+    function init() {
+      google.earth.createInstance(
+        'earth_div',  // div into which to place earth
+        init_success, // callback function when createInstance succeeded
+        init_failure  // callback function when createInstance failed
+      );
+    }
+
+    function init_success(instance) {
+      ge = instance;
+      ge.getWindow().setVisibility(true);
+
+
+      var kml_url = 'http://localhost:7777/Kloten-Airport.kml';
+
+   // createLink creates a «KmlLink» object. Such an object is
+   // used (among others) to specify the location of a kml file.
+      var link = ge.createLink(''); 
+
+   // Set the url for the kml file:
+      link.setHref(kml_url);
+
+   // Create a «KmlNetworkLink» object that is used to
+   // reference a kml file on a remote network.
+      var networkLink = ge.createNetworkLink('');
+      networkLink.set(link, true, true);
+
+      ge.getFeatures().appendChild(networkLink);
+
+
+    }
+
+    function init_failure(errorCode) {
+      alert('failed to init Google Earth');
+    }
+
+
+    google.load(
+      "earth",            // Module
+      "1",                // Version
+      {"other_params":
+          "sensor=false"  // Does application use a sensor such as GPS locator?
+      }
+    );
+
+
+    google.setOnLoadCallback(init);
+
+  </script>
+
+</head>
+<body style='margin:0'>
+  <div id="earth_div" style="height: 100%; width: 100%"></div>
+</body>
+</html>
+
