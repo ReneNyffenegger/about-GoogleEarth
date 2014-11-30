@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+
+  <Placemark>
+
+    <name>Description with html</name>
+
+    <description><![CDATA[
+
+      <h1>HTML is possible within a description</h1>
+
+      Some <span style='color:red'>red text</span>.
+      
+      <table border=1>
+        <tr><td>one  </td><td>foo</td></tr>
+        <tr><td>two  </td><td>bar</td></tr>
+        <tr><td>three</td><td>baz</td></tr>
+      </table>
+
+
+    ]]></description>
+
+    <Point>
+			<coordinates>8.542952335953721,47.36685263064198,0</coordinates>
+    </Point>
+
+  </Placemark>
+
+</kml>
