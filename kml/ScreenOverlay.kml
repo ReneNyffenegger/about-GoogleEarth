@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <ScreenOverlay>
+
+
+    <!-- Origin (x=0/y=0) is in the lower left corner.
+
+         y goes up, x goes right.
+
+      -->
+
+<!-- Place the upper left corner (0/1) of the image... -->
+     <overlayXY  x="0.0" y="1.0" xunits="fraction" yunits="fraction" />
+
+<!-- 10% to the right and 10% from the top of the screen (0.1/0.9) -->
+     <screenXY   x="0.1" y="0.9" xunits="fraction" yunits="fraction" />
+
+     <rotationXY x="0.1" y="0.9" xunits="fraction" yunits="fraction" />
+     <rotation>10</rotation>
+
+     <size       x="0"   y="0"   xunits="fraction" yunits="fraction" />
+
+     <Icon><href>the_png_says.png</href></Icon>
+  
+  </ScreenOverlay>
+
+</kml>
