@@ -25,6 +25,8 @@
 
       <gx:FlyTo>
 
+        <gx:duration>4</gx:duration>
+
 		    <LookAt>
 		    	<longitude>  8.54528530729939 </longitude>
 		    	<latitude > 47.36532685810796 </latitude>
@@ -40,6 +42,8 @@
     <gx:Wait><gx:duration>1</gx:duration></gx:Wait>
 
       <gx:FlyTo>
+
+        <gx:duration>4</gx:duration>
 
         <LookAt>
          <longitude>   8.54698758732740 </longitude>
