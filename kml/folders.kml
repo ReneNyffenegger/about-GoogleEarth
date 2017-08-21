@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+	<name>Folders</name>
+
+
+  <Folder><name>Folder one</name><open>1</open>
+
+	   <Folder><name>subfolder</name><open>1</open>
+
+	   	<Placemark>
+	   		<name>Path in subfolder</name>
+	   		<styleUrl>#orange-5px</styleUrl>
+	   		<LineString>
+	   			<tessellate>1</tessellate>
+	   			<coordinates>
+	   				8.541785133887323,47.36677970505284,0 8.544153942262056,47.36714394255758,0 
+	   			</coordinates>
+	   		</LineString>
+	   	</Placemark>
+
+	   </Folder>
+
+	   <Placemark>
+	   	<name>Path in folder one</name>
+	   	<styleUrl>#orange-5px</styleUrl>
+
+	   	<LineString>
+	   		<tessellate>1</tessellate>
+	   		<coordinates>
+	   			8.54184232399809,47.36647498852937,0 8.544170241436506,47.36685501672338,0 
+	   		</coordinates>
+	   	</LineString>
+
+	   </Placemark>
+
+  </Folder>
+
+  <Folder><name>Folder two</name><open>1</open>
+  
+  	<Placemark><name>Polygon in 2nd folder</name>
+
+  		<styleUrl>#orange-5px</styleUrl>
+  		<LineString>
+  			<tessellate>1</tessellate>
+  			<coordinates>
+  				8.541967280275596,47.36615976289033,0 8.544304513152113,47.36655716364855,0 
+  			</coordinates>
+  		</LineString>
+  	</Placemark>
+  
+  </Folder>
+
+	<Style id="orange-5px">
+		<LineStyle>
+			<color>ff00aaff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+
+</Document>
+</kml>
