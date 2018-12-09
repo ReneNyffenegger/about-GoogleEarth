@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+     xmlns:gx="http://www.google.com/kml/ext/2.2"
+     xmlns:kml="http://www.opengis.net/kml/2.2"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+  <name>LineStyle.kml</name>
+
+  <Placemark><name>Berlin - Paris</name>
+    <Style>
+       <LineStyle><color>ff0055ff</color><width>5</width></LineStyle>
+    </Style>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        13.40683115429257,52.51962546543717,0 
+         2.352216021876707,48.85663032459509,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+  <Placemark><name>Paris - Berne</name>
+      <Style>
+        <LineStyle><color>ffffaa00</color><width>4</width> </LineStyle>
+      </Style>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+           2.352216021876707,48.85663032459509,0
+           7.444573278402675,46.94792670733757,0 
+        </coordinates>
+      </LineString>
+  </Placemark>
+
+  <Placemark><name>Berne - Vienna</name>
+      <Style>
+        <LineStyle><color>b37f0055</color><width>6</width> </LineStyle>
+      </Style>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+           7.444573278402675,46.94792670733757,0 
+          16.3738864375659,48.20819727619284,0 
+        </coordinates>
+      </LineString>
+  </Placemark>
+
+</Document>
+</kml>
