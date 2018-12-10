@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document><name>styleUrl.kml</name>
+
+  <Style id="tq84-style">
+    <LineStyle>
+      <color>ff0055ff</color>
+      <width>5</width>
+    </LineStyle>
+  </Style>
+
+  <Placemark>
+    <name>Line one</name>
+    <styleUrl>#tq84-style</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        8.465677121380306,47.41193484288755,0
+        8.532733060308415,47.39736760135143,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+  <Placemark>
+    <name>Line two</name>
+    <styleUrl>#tq84-style</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        8.563074026053989,47.38552897948998,0
+        8.58324146144775,47.3301449958108,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+  <Placemark>
+    <name>Line three</name>
+    <styleUrl>#tq84-style</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        8.530401348458753,47.32892677784888,0
+        8.461013385362232,47.39126161880101,0 
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+</Document>
+</kml>
