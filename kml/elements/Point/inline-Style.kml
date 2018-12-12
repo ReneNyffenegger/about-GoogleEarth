@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-  <name>Point.kml</name>
+    <name>Point.kml</name>
 
-  <Placemark>
-    <name>Zürich</name>
-    <Point>
+    <Placemark>
+        <name>Zürich</name>
 
-      <Style>
-        <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
-      </Style>
+        <Style>
+            <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+        </Style>
 
-      <coordinates>8.54323814292547,47.3671231195409,0</coordinates>
-    </Point>
-  </Placemark>
+        <Point>
+            <coordinates>8.543240928407617,47.36695287673603,0</coordinates>
+        </Point>
+
+    </Placemark>
 
 </Document>
 </kml>

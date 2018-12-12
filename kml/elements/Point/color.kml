@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <name>color.kml</name>
+
+    <Placemark>
+        <name>Paradeplatz</name>
+
+        <Style>
+            <IconStyle>
+                <color>ff0000ff</color>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+                </Icon>
+            </IconStyle>
+            <LabelStyle>
+                <color>ff00ffff</color>
+            </LabelStyle>
+        </Style>
+
+        <Point>
+            <coordinates>8.53890807077965,47.36972631992387,0</coordinates>
+        </Point>
+
+    </Placemark>
+
+</Document>
+</kml>
