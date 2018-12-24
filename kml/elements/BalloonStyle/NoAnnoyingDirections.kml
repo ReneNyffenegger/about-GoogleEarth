@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+
+  <name>NoAnnoyingDirections.kml</name>
+
+  <Style id="BalloonWithoutDirections">
+    <BalloonStyle>
+      <bgColor>ffffaabb</bgColor>
+      <text>$[description]</text>
+    </BalloonStyle>
+  </Style>
+
+  <Placemark>
+    <name>Bouschänzli</name>
+    <description>This text in the Ballon does not have the annoying <i>Directions</i>.</description>
+    <styleUrl>#BalloonWithoutDirections</styleUrl>
+    <Point>
+      <coordinates>8.5423849941568,47.36772044171522,0</coordinates>
+      <gx:balloonVisibility>1</gx:balloonVisibility>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bellevue</name>
+    <description><![CDATA[This Description comes with the annoying <i>Directions</i>.]]></description>
+    <Point>
+      <coordinates>8.545130107295023,47.36714967272624,0</coordinates>
+    </Point>
+  </Placemark>
+
+</Document>
+</kml>
